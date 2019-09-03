@@ -1,2 +1,37 @@
-<h1>Welcome to the Photo App</h1>
-<p>Find me in app/views/welcome/index.html.erb</p>
+<% if current_user %>
+  <h1>Welcome <%= current_user.email %>
+<% else %>
+  <div class="jumbotron jumbotron-fluid">
+    <div class="container">
+      <h1 class="display-4">Photo App</h1>
+      <p class="lead">Cloud storage for all your photos</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-4 col-sm-offset-2">
+      <div class="card">
+        <div class="card-body">
+          <h2 class="card-title">Basic</h2>
+          <ul>
+            <li class="card-text">Unlimited storage</li>
+            <li class="card-text">Access anywhere</li>
+            <li class="card-text">Responsive design</li>
+          </ul>
+          <a href="#" class="btn btn-primary">Sign-Up for $5</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3">
+      <div class="card">
+        <div class="card-body">
+          <h2 class="card-title">Premium</h2>
+          <ul>
+            <li class="card-text">Everything from the Basic plan</li>
+            <li class="card-text">Unlimited projects</li>
+          </ul>
+          <a href="#" class="btn btn-primary">Sign-Up for $12</a>
+        </div>
+      </div>
+    </div>
+  </div>
+<% end %>

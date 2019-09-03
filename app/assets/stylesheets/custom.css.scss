@@ -54,3 +54,16 @@
 .btn-primary:visited, .btn-danger:visited {
   color: #fff;
 }
+
+.jumbotron {
+  background-image: asset-url('stripes.jpg');
+  background-size: cover;
+  background-blend-mode: color-burn;
+}
+
+.card {
+  padding-top: 0;
+  .card-body {
+    text-align: center;
+  }
+}
