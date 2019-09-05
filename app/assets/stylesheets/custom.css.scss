@@ -63,7 +63,15 @@
 
 .card {
   padding-top: 0;
-  .card-body {
-    text-align: center;
+  .card-body ul {
+    margin-left: 0;
+    padding-left: 15px;
   }
+  .left-card {
+    padding-left: 75px;
+  }
+}
+
+.no-left-padding {
+  padding-left: 0;
 }

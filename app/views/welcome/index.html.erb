@@ -8,28 +8,33 @@
     </div>
   </div>
   <div class="row">
-    <div class="col-sm-4 col-sm-offset-2">
-      <div class="card">
-        <div class="card-body">
-          <h2 class="card-title">Basic</h2>
-          <ul>
-            <li class="card-text">Unlimited storage</li>
-            <li class="card-text">Access anywhere</li>
-            <li class="card-text">Responsive design</li>
-          </ul>
-          <a href="#" class="btn btn-primary">Sign-Up for $5</a>
+    <div class="plans clearfix">
+      <div class="col-sm-3 col-sm-offset-3">
+        <div class="card">
+          <div class="card-body left-card">
+            <h2 class="card-title">Basic</h2>
+            <h4 class="card-subtitle mb-2 text-muted">$5 per month</h4>
+            <ul>
+              <li class="card-text">Unlimited storage</li>
+              <li class="card-text">Access anywhere</li>
+              <li class="card-text">Responsive design</li>
+            </ul>
+            <%= link_to "Sign up", new_user_registration_path, class: 'btn btn-primary' %>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col-sm-3">
-      <div class="card">
-        <div class="card-body">
-          <h2 class="card-title">Premium</h2>
-          <ul>
-            <li class="card-text">Everything from the Basic plan</li>
-            <li class="card-text">Unlimited projects</li>
-          </ul>
-          <a href="#" class="btn btn-primary">Sign-Up for $12</a>
+      <div class="col-sm-3">
+        <div class="card">
+          <div class="card-body">
+            <h2 class="card-title">Premium</h2>
+            <h4 class="card-subtitle mb-2 text-muted">$12 per month</h4>
+            <ul>
+              <li class="card-text">Everything from the Basic plan</li>
+              <li class="card-text">Unlimited projects</li>
+              <li class="card-text">Bragging rights</li>
+            </ul>
+            <%= link_to "Sign up", new_user_registration_path, class: 'btn btn-primary' %>
+          </div>
         </div>
       </div>
     </div>
