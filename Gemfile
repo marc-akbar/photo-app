@@ -30,6 +30,10 @@ gem 'twitter-bootstrap-rails'
 gem 'devise-bootstrap-views'
 gem 'jquery-rails'
 gem 'stripe'
+
+gem 'carrierwave'
+gem 'mini_magick'
+gem 'fog'
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
